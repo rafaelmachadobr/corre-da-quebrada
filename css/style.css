@@ -9,6 +9,15 @@ body {
   font-size: 16px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -20,7 +29,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: green;
   color: #fff;
 }
 
@@ -35,8 +43,64 @@ header nav ul {
   display: flex;
   align-items: center;
   list-style: none;
+  color: #333;
 }
 
 header nav ul li a {
   padding: 20px;
+}
+
+main section {
+  min-height: 100vh;
+}
+
+main section#home {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.45)
+    ),
+    url(../assets/bg-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+main section#home article {
+  width: 40%;
+  padding: 20px;
+  text-align: center;
+  margin-left: 20vh;
+  position: relative;
+}
+
+main section#home h1 {
+  font-size: 6vh;
+  font-weight: 300;
+  margin-bottom: 2vh;
+}
+
+main section#home p {
+  font-size: 2.6vh;
+  font-weight: 300;
+  margin-bottom: 5vh;
+}
+
+main section#home a {
+  padding: 2vh 4vh;
+  border: 0.3vh solid #fff;
+  border-radius: 20px;
+  font-size: 2.2vh;
+  font-weight: 300;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+main section#home a:hover {
+  background-color: #fff;
+  color: #000;
 }
