@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  height: 80px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: green;
+  color: #fff;
+}
+
+header a#logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  color: #b7b7b7;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li a {
+  padding: 20px;
+}
