@@ -181,6 +181,53 @@ main section#missao {
   background-repeat: no-repeat;
 }
 
+main section#missao article {
+  position: absolute;
+  top: 70vh;
+  left: 85vh;
+  max-width: 70vh;
+  padding: 7vh;
+  margin-left: 20vh;
+  position: relative;
+  background-color: #fff;
+}
+
+main section#missao h2 {
+  font-size: 6vh;
+  font-weight: 300;
+  margin-bottom: 2vh;
+}
+
+main section#missao p {
+  font-size: 2.6vh;
+  font-weight: 300;
+  margin-bottom: 5vh;
+}
+
+main section#missao a {
+  padding: 2vh 4vh;
+  border: 0.3vh solid #000;
+  border-radius: 20px;
+  font-size: 2.2vh;
+  font-weight: 300;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+main section#missao a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+main section#sobre {
+  background-color: #E5E5E5;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 @media screen and (max-width: 1100px) {
   main section#cozimento div#grid {
     grid-template-columns: repeat(2, 1fr);
