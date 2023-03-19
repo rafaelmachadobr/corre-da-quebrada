@@ -6,7 +6,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+  font-size: 2vh;
 }
 
 h1,
@@ -16,6 +16,7 @@ h4,
 h5,
 h6 {
   font-family: "Montserrat", sans-serif;
+  font-size: 2.6vh;
 }
 
 a {
@@ -36,7 +37,7 @@ header a#logo {
   font-size: 1.5rem;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
-  color: #b7b7b7;
+  color: #333;
 }
 
 header nav ul {
@@ -48,6 +49,10 @@ header nav ul {
 
 header nav ul li a {
   padding: 20px;
+}
+
+header nav ul li a:hover {
+  color: #eb8;
 }
 
 main section {
@@ -103,4 +108,87 @@ main section#home a {
 main section#home a:hover {
   background-color: #fff;
   color: #000;
+}
+
+main section#cozimento {
+  background-color: #f2f2f2;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main section#cozimento h2 {
+  font-size: 4vh;
+  margin: 0 0 5vh 0;
+  text-align: center;
+}
+
+main section#cozimento article {
+  width: 80%;
+  margin: 0 auto;
+}
+
+main section#cozimento div#grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 26vh;
+  grid-gap: 2.4vh;
+  padding: 20px;
+}
+
+main section#cozimento div#grid div.item {
+  padding: 10px;
+  display: flex;
+}
+
+main section#cozimento article div.img {
+  margin: 0 2vh;
+  display: block;
+  line-height: 0;
+  border-width: 0px;
+  min-width: 10vh;
+  min-height: 10vh;
+}
+
+main section#cozimento article div.img img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+main section#cozimento article div.textos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 50%;
+}
+
+main section#cozimento article div.textos h3 {
+  margin-bottom: 1.5vh;
+}
+
+main section#cozimento article div#textos p {
+  font-size: 2.6vh;
+  font-weight: 300;
+  margin-bottom: 5vh;
+}
+
+main section#missao {
+  background-image: url(../assets/bg-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1100px) {
+  main section#cozimento div#grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  main section#cozimento div#grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
