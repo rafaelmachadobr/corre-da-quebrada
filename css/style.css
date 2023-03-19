@@ -55,6 +55,10 @@ header nav ul li a:hover {
   color: #eb8;
 }
 
+#btn-mobile {
+  display: none;
+}
+
 main section {
   min-height: 100vh;
 }
@@ -133,7 +137,7 @@ main section#cozimento article {
 main section#cozimento div#grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 26vh;
+  grid-auto-rows: auto;
   grid-gap: 2.4vh;
   padding: 20px;
 }
@@ -179,6 +183,7 @@ main section#missao {
   background-image: url(../assets/bg-2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   height: 800px;
 }
 
@@ -485,14 +490,250 @@ footer p {
   color: #fff;
 }
 
-@media screen and (max-width: 1100px) {
-  main section#cozimento div#grid {
-    grid-template-columns: repeat(2, 1fr);
+@media screen and (max-width: 768px) {
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background: #e7e7e7;
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
   }
-}
+  #nav.active #menu {
+    height: auto;
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    color: black;
+  }
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
 
-@media screen and (max-width: 800px) {
+  main section#home article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  main section#home article h1 {
+    font-size: 4vh;
+    margin: 0 0 5vh 0;
+    text-align: center;
+  }
+
+  main section#cozimento article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 20vh auto;
+  }
+
   main section#cozimento div#grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main section#missao article {
+    display: none;
+  }
+
+  main section#sobre article {
+    flex-direction: column;
+  }
+
+  main section#sobre article div#direita {
+    width: 100%;
+  }
+
+  main section#sobre article div#direita h2 {
+    font-size: 4vh;
+    margin: 0 0 5vh 0;
+    text-align: center;
+  }
+
+  main section#sobre article div#direita p {
+    font-size: 2.6vh;
+    font-weight: 300;
+    margin-bottom: 5vh;
+    text-align: center;
+  }
+
+  main section#itens article {
+    max-width: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 20vh auto;
+  }
+
+  main section#itens article h2 {
+    font-size: 4vh;
+    margin: 0 0 5vh 0;
+    text-align: center;
+  }
+
+  main section#itens article p {
+    font-size: 2.6vh;
+    font-weight: 300;
+    margin-bottom: 5vh;
+    text-align: center;
+  }
+
+  main section#itens article div#grid {
+    display: grid;
     grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 4.5vh;
+    padding: 20px;
+  }
+
+  main section#contato article {
+    max-width: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 20vh auto;
+  }
+
+  main section#contato article h2 {
+    font-size: 4vh;
+    margin: 0 0 5vh 0;
+    text-align: center;
+  }
+
+  main section#contato article div#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main section#contato article div#form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  main section#contato article div#form form input {
+    width: 100%;
+    padding: 2vh 4vh;
+    border: 0.3vh solid #000;
+    border-radius: 20px;
+    font-size: 2.2vh;
+    font-weight: 300;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    margin-bottom: 2vh;
+  }
+
+  main section#contato article div#form form button {
+    width: 100%;
+    padding: 2vh 4vh;
+    border: 0.3vh solid #000;
+    border-radius: 20px;
+    font-size: 2.2vh;
+    font-weight: 300;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    margin-bottom: 2vh;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  main section#contato article div#form form button:hover {
+    background-color: #fff;
+    color: #000;
+  }
+
+  main section#contato article div#informacoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main section#contato article div#informacoes div.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5vh;
+  }
+
+  main section#contato article div#informacoes div.item h3 {
+    font-size: 2.6vh;
+    font-weight: 300;
+    margin-bottom: 1.5vh;
+    margin-top: 2.5vh;
+  }
+
+  main section#contato article div#informacoes div.item p {
+    font-size: 2.2vh;
+    font-weight: 300;
+    margin-bottom: 1.5vh;
+  }
+
+  footer {
+    background-color: #333;
+    padding: 4vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer p {
+    font-size: 2.2vh;
+    font-weight: 300;
+    color: #fff;
+  }
+
+  footer p a {
+    color: #fff;
   }
 }
