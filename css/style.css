@@ -196,6 +196,7 @@ main section#missao article {
   margin-left: 20vh;
   position: relative;
   background-color: #fff;
+  border-radius: 20px;
 }
 
 main section#missao h2 {
