@@ -585,9 +585,9 @@ footer p {
     align-items: center;
   }
 
-  /* main section#missao article {
+  main section#missao article {
     display: none;
-  } */
+  }
 
   main section#sobre article {
     flex-direction: column;
