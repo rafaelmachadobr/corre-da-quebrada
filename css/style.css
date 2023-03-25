@@ -185,15 +185,19 @@ main section#missao {
   background-repeat: no-repeat;
   background-position: center;
   height: 800px;
+  display: flex;
+  justify-content: center;
 }
 
 main section#missao article {
   position: absolute;
   top: 70vh;
-  left: 85vh;
+  /* left: 50%; */
   max-width: 70vh;
+  height: auto;
+  max-height: 65vh;
   padding: 7vh;
-  margin-left: 20vh;
+  /* margin-left: 20vh; */
   position: relative;
   background-color: #fff;
   border-radius: 20px;
@@ -578,9 +582,9 @@ footer p {
     align-items: center;
   }
 
-  main section#missao article {
+  /* main section#missao article {
     display: none;
-  }
+  } */
 
   main section#sobre article {
     flex-direction: column;
