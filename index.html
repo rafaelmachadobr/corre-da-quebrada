@@ -17,6 +17,7 @@
     <title>Padoca da Praça</title>
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
@@ -24,9 +25,23 @@
   </head>
   <body>
     <header id="header">
-      <a id="logo" href="#">Padoca da Praça</a>
-      <nav id="nav">
-        <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+      <a id="logo" href="#" data-aos="fade-right" data-aos-delay="200"
+        >Padoca da Praça</a
+      >
+      <nav
+        id="nav"
+        data-aos="fade-left"
+        data-aos-delay="200"
+        data-aos-offset="0"
+      >
+        <button
+          aria-label="Abrir Menu"
+          id="btn-mobile"
+          aria-haspopup="true"
+          aria-controls="menu"
+          aria-expanded="false"
+        >
+          Menu
           <span id="hamburger"></span>
         </button>
         <ul id="menu">
@@ -38,20 +53,20 @@
     </header>
     <main>
       <section id="home">
-        <article>
-          <h1>Padoca da Praça</h1>
-          <p>
+        <article data-aos="zoom-in" data-aos-delay="400">
+          <h1 data-aos="fade-up">Padoca da Praça</h1>
+          <p data-aos="fade-up">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
             voluptas, quod, quia, voluptates quae voluptatibus quibusdam
             voluptatum quos quidem quas nesciunt. Quisquam, quae.
           </p>
-          <a href="#">VER MENU</a>
+          <a href="#" data-aos="fade-up" data-aos-delay="600">VER MENU</a>
         </article>
       </section>
       <section id="cozimento">
         <article>
-          <h2>Cozimento Delicioso</h2>
-          <div id="grid">
+          <h2 data-aos="zoom-in">Cozimento Delicioso</h2>
+          <div id="grid" data-aos="fade-up" data-aos-delay="200">
             <div class="item">
               <div class="img">
                 <img src="assets/icon-1.png" alt="imagem 1" />
@@ -133,7 +148,7 @@
         </article>
       </section>
       <section id="missao">
-        <article>
+        <article data-aos="fade-left">
           <h2>Nossa Missão</h2>
           <p>
             Abrimos nossa primeira padaria no South End em 2000 com um objetivo:
@@ -147,15 +162,15 @@
       </section>
       <section id="sobre">
         <article>
-          <div id="esquerda">
-            <h2>Sobre Nós</h2>
-            <p>
+          <div id="esquerda" data-aos="fade-right">
+            <h2 data-aos="zoom-in" data-aos-delay="200">Sobre Nós</h2>
+            <p data-aos="zoom-in" data-aos-delay="400">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.
             </p>
-            <div id="links">
+            <div id="links" data-aos="zoom-in" data-aos-delay="600">
               <a href="#">NOSSA GENTE</a>
               <a href="#">NOSSOS VALORES</a>
               <a href="#">NOSSA HISTORIA</a>
@@ -164,23 +179,23 @@
               <a href="#">NOSSA PADARIA</a>
             </div>
           </div>
-          <div id="direita">
+          <div id="direita" data-aos="fade-left">
             <img src="assets/img-1.jpg" alt="imagem sobre" />
           </div>
         </article>
-        <div id="img-missao">
+        <div id="img-missao" data-aos="fade-up">
           <img src="assets/img-2.jpg" alt="Imagem missao" />
         </div>
       </section>
       <section id="itens">
-        <article>
-          <h2>Itens da padaria</h2>
-          <p>
+        <article data-aos="fade-up">
+          <h2 data-aos="zoom-in">Itens da padaria</h2>
+          <p data-aos="zoom-in" data-aos-delay="200">
             Duis aute irure dolor in reprehenderit in voluptate velit esse
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
             cupidatat non proident, sunt in culpa qui officia deserunt.
           </p>
-          <div id="grid">
+          <div id="grid" data-aos="zoom-in" data-aos-delay="400">
             <div class="card">
               <img src="assets/item-1.jpg" alt="imagem 1" />
               <h3>BAGUETE</h3>
@@ -221,24 +236,38 @@
         </article>
       </section>
       <section id="contato">
-        <article>
-          <h2>Contato</h2>
-          <div id="form">
+        <article data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+          <h2
+            data-aos="zoom-in"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-delay="200"
+          >
+            Contato
+          </h2>
+          <div
+            id="form"
+            data-aos="zoom-in"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-delay="400"
+          >
             <form action="">
               <input type="text" placeholder="Nome" />
               <input type="email" placeholder="Email" />
               <button type="submit">Enviar</button>
             </form>
           </div>
-          <div id="informacoes">
+          <div
+            id="informacoes"
+            data-aos="zoom-in"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-delay="600"
+          >
             <div class="item">
               <h3>Endereço</h3>
-              <p>
-                Av. Brg. Faria Lima, Itaim Bibi, São Paulo - SP, 04538-133
-              </p>
+              <p>Av. Brg. Faria Lima, Itaim Bibi, São Paulo - SP, 04538-133</p>
             </div>
             <div class="item">
-              <h3>Horario</h3>  
+              <h3>Horario</h3>
               <p>Segunda - Sábado: 06:00 - 22:00</p>
               <p>Domingo: 07:00 - 20:00</p>
             </div>
@@ -258,6 +287,7 @@
         </p>
       </footer>
     </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
   </body>
-  <script src="js/script.js"></script>
 </html>

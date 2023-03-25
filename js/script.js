@@ -23,3 +23,8 @@ function toggleMenu(event) {
 
 btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
+
+AOS.init({
+  duration: 1000,
+  once: true,
+})
