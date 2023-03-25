@@ -187,18 +187,15 @@ main section#missao {
   height: 800px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 main section#missao article {
-  position: absolute;
-  top: 70vh;
-  /* left: 50%; */
+  margin-top: 70vh;
   max-width: 70vh;
   height: auto;
-  max-height: 65vh;
   padding: 7vh;
   /* margin-left: 20vh; */
-  position: relative;
   background-color: #fff;
   border-radius: 20px;
 }
@@ -495,6 +492,13 @@ footer p {
   color: #fff;
 }
 
+@media screen and (max-width: 1400px) {
+  main section#cozimento div#grid {
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+}
+
 @media screen and (max-width: 768px) {
   #menu {
     display: block;
@@ -582,9 +586,9 @@ footer p {
     align-items: center;
   }
 
-  /* main section#missao article {
+  main section#missao article {
     display: none;
-  } */
+  }
 
   main section#sobre article {
     flex-direction: column;
