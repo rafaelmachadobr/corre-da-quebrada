@@ -366,7 +366,7 @@ main section#sobre article div#esquerda div#links {
   justify-content: space-between;
 }
 
-main section#sobre article div#esquerda div#links a {
+main section#sobre article div#esquerda div#links button {
   padding: 2vh 4vh;
   border: 0.3vh solid #000;
   border-radius: 20px;
@@ -377,7 +377,7 @@ main section#sobre article div#esquerda div#links a {
   margin-bottom: 2vh;
 }
 
-main section#sobre article div#esquerda div#links a:hover {
+main section#sobre article div#esquerda div#links button:hover {
   background-color: #000;
   color: #fff;
 }
