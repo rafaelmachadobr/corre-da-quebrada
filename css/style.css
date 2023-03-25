@@ -495,7 +495,6 @@ footer p {
 @media screen and (max-width: 1400px) {
   main section#cozimento div#grid {
     grid-template-columns: repeat(2, 1fr);
-
   }
 }
 
@@ -586,9 +585,9 @@ footer p {
     align-items: center;
   }
 
-  main section#missao article {
+  /* main section#missao article {
     display: none;
-  }
+  } */
 
   main section#sobre article {
     flex-direction: column;
