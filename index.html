@@ -17,7 +17,11 @@
     <title>Padoca da Praça</title>
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" media="screen and (min-width: 900px)"/>
+    <link
+      href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+      rel="stylesheet"
+      media="screen and (min-width: 900px)"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
@@ -25,7 +29,7 @@
   </head>
   <body>
     <header id="header">
-      <a id="logo" href="#" data-aos="fade-right" data-aos-delay="200"
+      <a id="logo" href="/" data-aos="fade-right" data-aos-delay="200"
         >Padoca da Praça</a
       >
       <nav
@@ -45,9 +49,11 @@
           <span id="hamburger"></span>
         </button>
         <ul id="menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Contato</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#cozimento">Cozimento</a></li>
+          <li><a href="#itens">Cardápio</a></li>
+          <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
     </header>
@@ -60,7 +66,7 @@
             voluptas, quod, quia, voluptates quae voluptatibus quibusdam
             voluptatum quos quidem quas nesciunt. Quisquam, quae.
           </p>
-          <a href="#" data-aos="fade-up" data-aos-delay="600">VER MENU</a>
+          <a href="#itens" data-aos="fade-up" data-aos-delay="600">VER MENU</a>
         </article>
       </section>
       <section id="cozimento">
@@ -161,9 +167,7 @@
         </article>
       </section>
       <section id="sobre">
-        <article 
-          data-aos="zoom-in"
-        >
+        <article data-aos="zoom-in">
           <div id="esquerda" data-aos="fade-right">
             <h2 data-aos="zoom-in" data-aos-delay="200">Sobre Nós</h2>
             <p data-aos="zoom-in" data-aos-delay="400">
@@ -252,9 +256,22 @@
             data-aos-anchor-placement="top-bottom"
             data-aos-delay="400"
           >
-            <form action="">
-              <input type="text" placeholder="Nome" />
-              <input type="email" placeholder="Email" />
+            <form>
+              <input
+                type="text"
+                id="nome"
+                placeholder="Nome"
+                regex="^[a-zA-Z\s]+$"
+                required
+              />
+
+              <input
+                type="email"
+                id="email"
+                placeholder="Email"
+                Regex="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$"
+                required
+              />
               <button type="submit">Enviar</button>
             </form>
           </div>

@@ -1,5 +1,6 @@
 const btnMobile = document.getElementById("btn-mobile");
 const docTitle = document.title;
+const form = document.querySelector("form");
 
 window.addEventListener("blur", () => {
   document.title = "Volte logo!";
@@ -27,4 +28,14 @@ btnMobile.addEventListener("touchstart", toggleMenu);
 AOS.init({
   duration: 1000,
   once: true,
+});
+
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+  const nome = document.getElementById("nome").value;
+  const email = document.getElementById("email").value;
+  alert("Olá, " + nome + "! Seu formulário foi enviado com sucesso!");
+
+  nome.innerHTML = "";
+  email.value = "";
 });

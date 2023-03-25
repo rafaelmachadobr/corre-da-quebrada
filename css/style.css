@@ -4,6 +4,23 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #8B4513;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 2vh;
@@ -191,7 +208,7 @@ main section#missao {
 }
 
 main section#missao article {
-  margin-top: 70vh;
+  margin-top: 90vh;
   max-width: 70vh;
   height: auto;
   padding: 7vh;
@@ -518,6 +535,7 @@ footer p {
     overflow-y: auto;
   }
   #menu a {
+    display: block;
     padding: 1rem 0;
     margin: 0 1rem;
     border-bottom: 2px solid rgba(0, 0, 0, 0.05);
