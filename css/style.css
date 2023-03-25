@@ -8,6 +8,10 @@ html {
   scroll-behavior: smooth;
 }
 
+button {
+  cursor: pointer;
+}
+
 ::-webkit-scrollbar {
   width: 12px;
 }
@@ -18,7 +22,7 @@ html {
 
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background: #8B4513;
+  background: #8b4513;
 }
 
 body {
@@ -229,7 +233,7 @@ main section#missao p {
   margin-bottom: 5vh;
 }
 
-main section#missao a {
+main section#missao button {
   padding: 2vh 4vh;
   border: 0.3vh solid #000;
   border-radius: 20px;
@@ -239,9 +243,85 @@ main section#missao a {
   font-weight: bold;
 }
 
-main section#missao a:hover {
+main section#missao button:hover {
   background-color: #000;
   color: #fff;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+#fade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 5;
+}
+
+#modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 90%;
+  height: 80%;
+  max-height: 90%;
+  background-color: #fff;
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+  z-index: 10;
+}
+
+#fade,
+#modal {
+  transition: 0.5s;
+  opacity: 1;
+  pointer-events: all;
+  overflow-y: auto;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+.modal-header h2 {
+  font-size: 1.7rem;
+}
+
+#close-modal {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 1px solid #000;
+}
+
+#close-modal:hover {
+  background-color: #ccc;
+}
+
+.modal-body p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+#modal.hide,
+#fade.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#modal.hide {
+  top: 0;
 }
 
 main section#sobre {
@@ -604,7 +684,11 @@ footer p {
   }
 
   main section#missao article {
-    display: none;
+    /* display: none; */
+    margin-top: 60vh;
+    padding: 2vh;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   main section#sobre article {
