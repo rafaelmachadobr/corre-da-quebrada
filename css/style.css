@@ -51,14 +51,18 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  color: #fff;
 }
 
-header a#logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  font-family: "Montserrat", sans-serif;
-  color: #333;
+header a#logo div {
+  width: 90px;
+  height: 100%;
+  object-fit: contain;
+}
+
+header a#logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 header nav ul {
@@ -73,7 +77,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  color: #D2B48C;
+  color: #d2b48c;
 }
 
 #btn-mobile {
@@ -386,7 +390,7 @@ main section#sobre article div#esquerda div#links button {
 }
 
 .accordion::after {
-  content: '\002B';
+  content: "\002B";
   color: #777;
   font-weight: bold;
   float: right;
@@ -397,7 +401,8 @@ main section#sobre article div#esquerda div#links button {
   content: "\2212";
 }
 
-.active, .accordion:hover {
+.active,
+.accordion:hover {
   background-color: #ccc;
 }
 
