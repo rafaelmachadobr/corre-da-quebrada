@@ -125,7 +125,6 @@ main section#home a {
   border: 0.3vh solid #fff;
   border-radius: 20px;
   font-size: 2.2vh;
-  font-weight: 300;
   transition: all 0.3s ease;
   font-weight: bold;
 }
@@ -216,7 +215,6 @@ main section#missao article {
   max-width: 70vh;
   height: auto;
   padding: 7vh;
-  /* margin-left: 20vh; */
   background-color: #fff;
   border-radius: 20px;
 }
@@ -238,7 +236,6 @@ main section#missao button {
   border: 0.3vh solid #000;
   border-radius: 20px;
   font-size: 2.2vh;
-  font-weight: 300;
   transition: all 0.3s ease;
   font-weight: bold;
 }
@@ -371,7 +368,6 @@ main section#sobre article div#esquerda div#links button {
   border: 0.3vh solid #000;
   border-radius: 20px;
   font-size: 2.2vh;
-  font-weight: 300;
   transition: all 0.3s ease;
   font-weight: bold;
   margin-bottom: 2vh;
@@ -507,7 +503,6 @@ main section#itens article div#grid div.card p {
 
 main section#itens article div#grid div.card span {
   font-size: 2.2vh;
-  font-weight: 300;
   margin-bottom: 1.5vh;
   font-weight: bold;
 }
@@ -556,7 +551,6 @@ main section#contato article div#form form input {
   border: 0.3vh solid #000;
   border-radius: 20px;
   font-size: 2.2vh;
-  font-weight: 300;
   transition: all 0.3s ease;
   font-weight: bold;
   margin-bottom: 2vh;
@@ -568,7 +562,6 @@ main section#contato article div#form form button {
   border: 0.3vh solid #000;
   border-radius: 20px;
   font-size: 2.2vh;
-  font-weight: 300;
   transition: all 0.3s ease;
   font-weight: bold;
   margin-bottom: 2vh;
@@ -720,7 +713,6 @@ footer p {
   }
 
   main section#missao article {
-    /* display: none; */
     margin-top: 60vh;
     padding: 2vh;
     margin-left: 10px;
@@ -810,7 +802,6 @@ footer p {
     border: 0.3vh solid #000;
     border-radius: 20px;
     font-size: 2.2vh;
-    font-weight: 300;
     transition: all 0.3s ease;
     font-weight: bold;
     margin-bottom: 2vh;
@@ -822,7 +813,6 @@ footer p {
     border: 0.3vh solid #000;
     border-radius: 20px;
     font-size: 2.2vh;
-    font-weight: 300;
     transition: all 0.3s ease;
     font-weight: bold;
     margin-bottom: 2vh;
