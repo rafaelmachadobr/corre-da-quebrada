@@ -21,6 +21,32 @@ Além disso, o projeto também tem como objetivo agradecer ao instituto PROA pel
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" height="50" title="GitHub" />
 </div>
 
+## Design do projeto
+
+O design do projeto foi criado utilizando a ferramenta Figma. Você pode acessá-lo clicando no link abaixo:
+
+- [Design do projeto no Figma](https://www.figma.com/file/e4kJRDyoE4xCr8KyVBLaMR/Corre-da-quebrada?node-id=0-1)
+
+Lá você poderá visualizar todo o projeto.
+
+## Executando o projeto
+
+Você pode visualizar o projeto em ação através deste link: 
+
+- [Link do site na Vercel](https://padocadapraca.vercel.app/)
+
+Se você deseja executar o projeto localmente em sua máquina, siga os passos abaixo:
+
+1. Abra o terminal do seu sistema operacional;
+
+2. Clone o repositório do GitHub com o comando `git clone https://github.com/rafaelmachadobr/corre-da-quebrada.git`;
+
+3. Acesse a pasta do projeto com o comando `cd corre-da-quebrada`;
+
+4. Abra o arquivo `index.html` em um navegador web.
+
+Pronto! O projeto será executado em seu navegador e você poderá visualizar todas as funcionalidades implementadas. Lembre-se de que é necessário ter um navegador web instalado em sua máquina, como Google Chrome, Mozilla Firefox, Microsoft Edge ou Safari, para executar o projeto.
+
 ## Nome do projeto
 O nome "Corre da Quebrada" foi escolhido porque reflete a ideia de correr em busca de algo, neste caso, divulgar e apoiar um trabalho comercial do bairro. Além disso, o termo "quebrada" é frequentemente utilizado em algumas regiões do Brasil como uma gíria que significa "bairro" ou "comunidade", o que torna o nome ainda mais apropriado.
 
