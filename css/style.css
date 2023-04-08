@@ -623,6 +623,32 @@ footer p {
   color: #fff;
 }
 
+#myBtn {
+  display: none; /* esconde o botão por padrão */
+  position: fixed; /* posiciona o botão de forma fixa */
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 99; /* garante que o botão esteja sempre na parte superior da página */
+  font-size: 18px; /* define o tamanho da fonte do botão */
+  outline: none; /* remove o contorno ao clicar no botão */
+  background-color: #fff;
+  color: #0a1128;
+  cursor: pointer; /* adiciona um cursor de ponteiro ao passar o mouse sobre o botão */
+  border-radius: 50%;
+  transform: rotate(-90deg);
+  transition: all 0.3s ease-in-out; /* adiciona uma transição suave de 0,3 segundos a todas as propriedades */
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  border: 0.01rem solid #0a1128;
+}
+
+#myBtn:hover {
+  background-color: #0a1128;
+  color: #fff;
+}
+
 @media screen and (max-width: 1400px) {
   main section#cozimento div#grid {
     grid-template-columns: repeat(2, 1fr);
